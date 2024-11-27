@@ -1,0 +1,228 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f5f7;
+    background-image: url('https://www.alcanciadigitalteleton.mx/recursos/u/7663/stock/51512_Cerrito_Colorado__1__B.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación general */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #e67e22;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Contenedor de formulario */
+form {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4b5563;
+    font-size: 0.95rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Botones interactivos */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+    margin: 15px 5px 0 0;
+}
+
+button[type="submit"] {
+    background-color: #e67e22; /* Botón consultar */
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Filtros desplegables */
+details {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+details:hover {
+    background-color: #f8f9fb;
+    transform: scale(1.02);
+}
+
+details summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+    padding: 8px;
+    border-radius: 6px;
+    background: #f0f4f9;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+details[open] summary {
+    background-color: #e7f1ff;
+}
+
+details[open] {
+    animation: expand 0.5s ease-out;
+}
+
+@keyframes expand {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+details div {
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Tabla de resultados */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+th {
+    background-color: #2d6a4f; /* Verde profesional */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+/* Estilo de inputs */
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Mensajes */
+p {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    animation: fadeIn 0.8s ease-in-out;
+}
